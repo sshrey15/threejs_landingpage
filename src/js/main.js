@@ -16,7 +16,7 @@ function init() {
   renderer = new THREE.WebGLRenderer({ antialias: true });
 
   const textureLoader = new THREE.TextureLoader();
-  textureLoader.load('/src/models/space3.jpg', function(texture) {
+  textureLoader.load('/space3.jpg', function(texture) {
     scene.background = texture;
   });
 
@@ -34,7 +34,7 @@ function init() {
   const loader = new GLTFLoader();
   loader.load(
     //shrey
-    "/src/models/shiva.glb",
+    "/shiva.glb",
     function (gltf) {
       model = gltf.scene;
       model.scale.set(0.07, 0.07, 0.07);
